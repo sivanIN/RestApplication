@@ -39,7 +39,7 @@ public class AppController {
 		return new ResponseEntity<>(newRestaurant,HttpStatus.CREATED);
 		
 	}
-	
+	//Test
 	@PostMapping("/newfooditem")
 	public ResponseEntity<FoodItem> newFoodItem(@RequestBody FoodItem fooditem) {
 		FoodItem newFoodItem = irestaurantservices.newFoodItem(fooditem);
